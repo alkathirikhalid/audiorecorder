@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    // Specifies build tool version
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.alkathirikhalid.audiorecorder"
+        // Specifies minimum supported version
+        minSdkVersion 16
+        // specifies the target version
+        targetSdkVersion 23
+        // The version code increases by 1 integer
+        versionCode 1
+        // Human readable and expressed as 1.1 or any value
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    // Specifies the support version
+    compile 'com.android.support:appcompat-v7:23.4.0'
+}

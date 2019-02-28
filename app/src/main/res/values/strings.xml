@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Audio Recorder</string>
+    <string name="record">Record</string>
+    <string name="stop_record">Stop Record</string>
+    <string name="play">Play</string>
+    <string name="stop_play">Stop Play</string>
+    <string name="unknown_action">Unknown Action</string>
+    <string name="unknown_button_click">Unknown Button Click</string>
+</resources>
